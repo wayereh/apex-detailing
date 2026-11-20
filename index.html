@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX Detailing — Преміальний детейлінг та захист авто</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header__container">
+            <a href="#" class="logo">APEX<span>DETAILING</span></a>
+            
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="#services" class="nav__link">Послуги</a></li>
+                    <li><a href="#calculator" class="nav__link">Калькулятор</a></li>
+                    <li><a href="#portfolio" class="nav__link">Роботи</a></li>
+                    <li><a href="#faq" class="nav__link">Питання</a></li>
+                    <li><a href="#contacts" class="nav__link">Контакти</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <button class="btn btn--primary btn--sm" data-modal-open>Записатися</button>
+                <button class="burger" id="burger" aria-label="Відкрити меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__bg"></div>
+        <div class="container hero__container">
+            <div class="hero__content">
+                <span class="badge">Студія естетики та захисту автомобілів</span>
+                <h1 class="hero__title">Повернемо вашому авто <span>салонний вигляд</span> та надійний захист</h1>
+                <p class="hero__subtitle">Професійне полірування, керамічні покриття, антигравійна плівка та глибока хімчистка з гарантією результату.</p>
+                
+                <div class="hero__buttons">
+                    <a href="#calculator" class="btn btn--primary">Розрахувати вартість</a>
+                    <a href="#services" class="btn btn--outline">Наші послуги</a>
+                </div>
+
+                <div class="hero__stats">
+                    <div class="stat-item">
+                        <span class="stat-item__num">5+</span>
+                        <span class="stat-item__text">років досвіду майстрів</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-item__num">1 200+</span>
+                        <span class="stat-item__text">захищених автомобілів</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-item__num">до 5 років</span>
+                        <span class="stat-item__text">гарантія на покриття</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section__head">
+                <h2 class="section__title">Послуги та ціни</h2>
+                <p class="section__desc">Працюємо сертифікованою автохімією Koch Chemie, Gyeon та плівками Llumar</p>
+            </div>
+
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-card__top">
+                        <span class="service-card__tag">Кузов</span>
+                        <h3 class="service-card__title">Відновлювальне полірування</h3>
+                        <p class="service-card__text">Видалення до 95% подряпин, павутиння та помутнінь лаку. Повернення глибокого дзеркального блиску.</p>
+                    </div>
+                    <div class="service-card__bottom">
+                        <span class="service-card__price">від 6 500 грн</span>
+                        <button class="btn btn--outline btn--sm" data-service="Відновлювальне полірування">Обрати</button>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-card__top">
+                        <span class="service-card__tag">Захист</span>
+                        <h3 class="service-card__title">Керамічне покриття</h3>
+                        <p class="service-card__text">Нанесення 2-х шарів нанокераміки. Потужний гідрофобний ефект, захист від реагентів та вигорання.</p>
+                    </div>
+                    <div class="service-card__bottom">
+                        <span class="service-card__price">від 8 000 грн</span>
+                        <button class="btn btn--outline btn--sm" data-service="Керамічне покриття">Обрати</button>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-card__top">
+                        <span class="service-card__tag">Бронювання</span>
+                        <h3 class="service-card__title">Антигравійна плівка</h3>
+                        <p class="service-card__text">Обклеювання зон ризику або всього кузова поліуретановою плівкою із функцією самовідновлення.</p>
+                    </div>
+                    <div class="service-card__bottom">
+                        <span class="service-card__price">від 14 000 грн</span>
+                        <button class="btn btn--outline btn--sm" data-service="Антигравійна плівка">Обрати</button>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-card__top">
+                        <span class="service-card__tag">Салон</span>
+                        <h3 class="service-card__title">Детейлінг-хімчистка салону</h3>
+                        <p class="service-card__text">Делікатне очищення шкіри, алькантари, текстилю та пластику без запаху хімії з консервацією.</p>
+                    </div>
+                    <div class="service-card__bottom">
+                        <span class="service-card__price">від 4 200 грн</span>
+                        <button class="btn btn--outline btn--sm" data-service="Детейлінг-хімчистка салону">Обрати</button>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-card__top">
+                        <span class="service-card__tag">Догляд</span>
+                        <h3 class="service-card__title">Трьохфазна детейлінг-мийка</h3>
+                        <p class="service-card__text">Безпечне очищення кузова, дисків, арок, моторного відсіку та нанесення захисного воску.</p>
+                    </div>
+                    <div class="service-card__bottom">
+                        <span class="service-card__price">від 1 200 грн</span>
+                        <button class="btn btn--outline btn--sm" data-service="Трьохфазна детейлінг-мийка">Обрати</button>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-card__top">
+                        <span class="service-card__tag">Комфорт</span>
+                        <h3 class="service-card__title">Шумоізоляція салону</h3>
+                        <p class="service-card__text">Комплексне зниження шуму від дороги та колісних арок. Покращення акустики та теплоізоляції.</p>
+                    </div>
+                    <div class="service-card__bottom">
+                        <span class="service-card__price">від 9 500 грн</span>
+                        <button class="btn btn--outline btn--sm" data-service="Шумоізоляція салону">Обрати</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Calculator -->
+    <section class="section section--dark" id="calculator">
+        <div class="container">
+            <div class="section__head">
+                <h2 class="section__title">Калькулятор вартості</h2>
+                <p class="section__desc">Оберіть клас вашого автомобіля та потрібні процедури для попереднього розрахунку</p>
+            </div>
+
+            <div class="calc-box">
+                <div class="calc-box__controls">
+                    <div class="calc-group">
+                        <h3 class="calc-group__title">1. Оберіть клас автомобіля:</h3>
+                        <div class="car-classes" id="carClasses">
+                            <button type="button" class="car-btn active" data-multiplier="1">Седан / Хетчбек</button>
+                            <button type="button" class="car-btn" data-multiplier="1.2">Кросовер / Універсал</button>
+                            <button type="button" class="car-btn" data-multiplier="1.35">Позашляховик / Мінівен</button>
+                        </div>
+                    </div>
+
+                    <div class="calc-group">
+                        <h3 class="calc-group__title">2. Відзначте необхідні послуги:</h3>
+                        <div class="calc-services" id="calcServices">
+    <label class="checkbox-card">
+        <input type="checkbox" value="6500" data-name="Полірування кузова" data-hours="8" checked>
+        <span class="checkbox-card__custom"></span>
+        <span class="checkbox-card__info">
+            <strong>Полірування кузова</strong>
+            <small class="service-price-label">6 500 грн</small>
+        </span>
+    </label>
+
+    <label class="checkbox-card">
+        <input type="checkbox" value="8000" data-name="Керамічне покриття (2 шари)" data-hours="6">
+        <span class="checkbox-card__custom"></span>
+        <span class="checkbox-card__info">
+            <strong>Керамічне покриття (2 шари)</strong>
+            <small class="service-price-label">8 000 грн</small>
+        </span>
+    </label>
+
+    <label class="checkbox-card">
+        <input type="checkbox" value="14000" data-name="Антигравійна плівка (зони ризику)" data-hours="10">
+        <span class="checkbox-card__custom"></span>
+        <span class="checkbox-card__info">
+            <strong>Антигравійна плівка (зони ризику)</strong>
+            <small class="service-price-label">14 000 грн</small>
+        </span>
+    </label>
+
+    <label class="checkbox-card">
+        <input type="checkbox" value="4200" data-name="Повна хімчистка салону" data-hours="7">
+        <span class="checkbox-card__custom"></span>
+        <span class="checkbox-card__info">
+            <strong>Повна хімчистка салону</strong>
+            <small class="service-price-label">4 200 грн</small>
+        </span>
+    </label>
+
+    <label class="checkbox-card">
+        <input type="checkbox" value="1500" data-name="Антидощ на всі вікна" data-hours="1">
+        <span class="checkbox-card__custom"></span>
+        <span class="checkbox-card__info">
+            <strong>Антидощ на всі вікна</strong>
+            <small class="service-price-label">1 500 грн</small>
+        </span>
+    </label>
+
+    <label class="checkbox-card">
+        <input type="checkbox" value="1800" data-name="Детейлінг моторного відсіку" data-hours="2">
+        <span class="checkbox-card__custom"></span>
+        <span class="checkbox-card__info">
+            <strong>Детейлінг моторного відсіку</strong>
+            <small class="service-price-label">1 800 грн</small>
+        </span>
+    </label>
+</div>
+                    </div>
+                </div>
+
+                <div class="calc-box__summary">
+                    <div class="summary-card">
+                        <h3>Ваш розрахунок</h3>
+                        <div class="summary-card__row">
+                            <span>Клас авто:</span>
+                            <strong id="summaryCar">Седан / Хетчбек</strong>
+                        </div>
+                        <div class="summary-card__row">
+                            <span>Орієнтовний час:</span>
+                            <strong id="summaryTime">8 год</strong>
+                        </div>
+                        <div class="summary-card__list" id="summaryList">
+                            <!-- Список заполняется через JS -->
+                        </div>
+                        <div class="summary-card__total">
+                            <span>Разом до сплати:</span>
+                            <div class="total-price" id="summaryTotal">6 500 грн</div>
+                        </div>
+                        <button type="button" class="btn btn--primary btn--full" id="bookCalcBtn">Записатися з цим розрахунком</button>
+                        <p class="summary-card__note">* Точна вартість фіксується після огляду стану ЛФП майстром</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section" id="portfolio">
+        <div class="container">
+            <div class="section__head">
+                <h2 class="section__title">Наші роботи</h2>
+                <p class="section__desc">Приклади виконаних проєктів у нашій студії</p>
+            </div>
+
+            <div class="filter-tabs" id="portfolioFilters">
+                <button class="filter-btn active" data-filter="all">Усі роботи</button>
+                <button class="filter-btn" data-filter="polishing">Полірування та кераміка</button>
+                <button class="filter-btn" data-filter="interior">Хімчистка салону</button>
+                <button class="filter-btn" data-filter="ppf">Антигравійна плівка</button>
+            </div>
+
+            <div class="portfolio-grid" id="portfolioGrid">
+                <div class="work-card" data-category="polishing">
+                    <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&w=800&q=80" alt="BMW 5 Series полірування" loading="lazy">
+                    <div class="work-card__overlay">
+                        <span class="work-card__cat">Полірування та кераміка</span>
+                        <h3>BMW 5 Series (G30)</h3>
+                        <p>Глибоке полірування кузова + 2 шари кераміки Gyeon</p>
+                    </div>
+                </div>
+
+                <div class="work-card" data-category="ppf">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" alt="Porsche 911 антигравійна плівка" loading="lazy">
+                    <div class="work-card__overlay">
+                        <span class="work-card__cat">Антигравійна плівка</span>
+                        <h3>Porsche 911 Carrera</h3>
+                        <p>Повне обклеювання кузова глянцевим поліуретаном Llumar</p>
+                    </div>
+                </div>
+
+                <div class="work-card" data-category="interior">
+                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800&q=80" alt="Audi Q7 хімчистка салону" loading="lazy">
+                    <div class="work-card__overlay">
+                        <span class="work-card__cat">Хімчистка салону</span>
+                        <h3>Audi Q7 S-Line</h3>
+                        <p>Комплексна хімчистка шкіряного салону та озонування</p>
+                    </div>
+                </div>
+
+                <div class="work-card" data-category="polishing">
+                    <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=800&q=80" alt="Mercedes E-Class" loading="lazy">
+                    <div class="work-card__overlay">
+                        <span class="work-card__cat">Полірування та кераміка</span>
+                        <h3>Mercedes-Benz E-Class</h3>
+                        <p>Антихром пакет, полірування оптики та рідке скло</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section--dark" id="faq">
+        <div class="container container--narrow">
+            <div class="section__head">
+                <h2 class="section__title">Часті запитання</h2>
+                <p class="section__desc">Відповіді на популярні питання власників авто</p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Скільки часу займає полірування та нанесення кераміки?</span>
+                        <span class="faq-item__icon">+</span>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Повний цикл займає від 1,5 до 2 робочих днів. Це пов'язано з тим, що після нанесення керамічного складу автомобіль має постояти в сухому теплому боксі мінімум 8–10 годин для первинної кристалізації покриття.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Чи безпечне полірування для заводського лаку?</span>
+                        <span class="faq-item__icon">+</span>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Так, абсолютно безпечне. Перед початком робіт ми обов'язково заміряємо товщину ЛФП товщиноміром на кожній деталі. Під час відновлювального полірування знімається лише 2–4 мікрони пошкодженого лаку (при заводській товщині 100–140 мікрон).</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Що входить у захист «зон ризику» антигравійною плівкою?</span>
+                        <span class="faq-item__icon">+</span>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>До стандартного пакету входять: передній бампер, капот повністю, передні крила, фари, дзеркала заднього виду, стійки лобового скла, смуга на дах та зони під дверними ручками.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Чи залишається салон вологим після хімчистки?</span>
+                        <span class="faq-item__icon">+</span>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Ні, ви забираєте повністю сухий автомобіль. Ми використовуємо професійні екстрактори та турбосушки, а в холодну пору року додатково прогріваємо салон перед видачею авто клієнту.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts & Form Section -->
+    <section class="section" id="contacts">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 class="section__title">Запишіться на безкоштовний огляд</h2>
+                    <p class="contact-info__desc">Приїжджайте до нашої студії — майстер огляне кузов під професійним світлом, підбере оптимальний комплекс робіт та зафіксує точну ціну.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-details__item">
+                            <span>Адреса студії:</span>
+                            <strong>м. Київ, вул. Велика Васильківська, 114 (паркінг)</strong>
+                        </div>
+                        <div class="contact-details__item">
+                            <span>Графік роботи:</span>
+                            <strong>Щодня з 09:00 до 20:00</strong>
+                        </div>
+                        <div class="contact-details__item">
+                            <span>Телефон / Telegram:</span>
+                            <a href="tel:+380671234567"><strong>+38 (067) 123-45-67</strong></a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="mainForm">
+                    <h3>Залишити заявку</h3>
+                    <div class="form-group">
+                        <label for="userName">Ваше ім'я *</label>
+                        <input type="text" id="userName" name="name" placeholder="Олександр" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="userPhone">Номер телефону *</label>
+                        <input type="tel" id="userPhone" name="phone" placeholder="+38 (0__) ___-__-__" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="userComment">Марка авто та бажана послуга</label>
+                        <textarea id="userComment" name="comment" rows="3" placeholder="Наприклад: Audi A4, цікавить полірування та кераміка"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">Відправити заявку</button>
+                    <p class="form-status" id="mainFormStatus"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <a href="#" class="logo">APEX<span>DETAILING</span></a>
+            <p class="footer__copy">© 2026 APEX Detailing Studio. Усі права захищено.</p>
+            <div class="footer__socials">
+                <a href="#contacts">Instagram</a>
+                <a href="#contacts">Telegram</a>
+                <a href="#contacts">TikTok</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal" aria-hidden="true">
+        <div class="modal__backdrop" data-modal-close></div>
+        <div class="modal__dialog">
+            <button class="modal__close" data-modal-close aria-label="Закрити">&times;</button>
+            <h3>Швидкий запис у студію</h3>
+            <p class="modal__subtitle">Менеджер зв'яжеться з вами протягом 10 хвилин для узгодження зручного часу.</p>
+            
+            <form id="modalForm">
+                <div class="form-group">
+                    <label for="modalName">Ваше ім'я *</label>
+                    <input type="text" id="modalName" required placeholder="Введіть ім'я">
+                </div>
+                <div class="form-group">
+                    <label for="modalPhone">Телефон *</label>
+                    <input type="tel" id="modalPhone" required placeholder="+38 (0__) ___-__-__">
+                </div>
+                <div class="form-group">
+                    <label for="modalDetails">Деталі замовлення</label>
+                    <textarea id="modalDetails" rows="3" placeholder="Вкажіть марку авто або послугу"></textarea>
+                </div>
+                <button type="submit" class="btn btn--primary btn--full">Підтвердити запис</button>
+                <p class="form-status" id="modalFormStatus"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
